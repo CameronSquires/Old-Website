@@ -6,11 +6,62 @@ body {
   background-color: #81ABFF;
 }
 
+#header {
+  width: 100%;
+}
+
 #navbar {
+  position: fixed;
+  width: 100%;
   background-color: #053BA7;
 }
 
 .tabs {
-  list-style: none;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 0;
+}
+
+.tab {
+  padding: 18px;
+}
+
+.tab a {
+  font-size: 1.25rem;
+  font-family: 'roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.tab a:hover {
+  color: #81ABFF;
+}
+
+#copyright {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  padding: 12px;
+}
+
+#footer {
+  background-color: #053BA7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  /*Remove later*/
+  bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */

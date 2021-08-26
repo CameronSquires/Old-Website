@@ -9,10 +9,53 @@ body {
     background-color: $backgroundcolour;
 }
 
+#header {
+    width:100%;
+}
+
 #navbar {
+    position:fixed;
+    width:100%;
     background-color: $navcolour;
 }
 
 .tabs {
-    list-style: none;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    padding-left:0;
+}
+
+.tab {
+    
+    a {
+        font-size: 1.25rem;
+        font-family: 'roboto', sans-serif;
+        text-decoration: none;
+        color: white;
+        transition: 0.25s ease-in-out;
+        &:hover {
+            color:$backgroundcolour;
+        }
+    }
+    padding:18px;
+}
+
+
+#copyright {
+    font-family: Verdana, sans-serif;
+    font-size:12px;
+    padding: 12px;
+}
+
+
+
+#footer {
+    background-color:$navcolour;
+    width:100%;
+    display:flex;
+    align-items: flex-end;
+    position:absolute; /*Remove later*/
+    bottom:0;
 }
