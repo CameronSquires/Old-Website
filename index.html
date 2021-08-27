@@ -14,7 +14,19 @@
         <nav class="nav">
             <ol class="tabs">
                 <li class="tab"><a href="#">About</a></li>
-                <li class="tab"><a href="#">Projects</a></li>
+                <div class="extendable"onmouseover="extendnav()" onmouseout="retractnav()">
+                <li class="tab">
+                    <a href="#">
+                        Projects
+                    
+                        <ol id="hiddentabs" class="hiddentabsclass">
+                            <li><a href="#">Racecar</a></li>
+                            <li><a href="#">Pong</a></li>
+                            <li><a href="#">Passwords</a></li>
+                        </ol>
+                    </a>
+                </li>
+                </div>
                 <li class="tab"><a href="#">Contact</a></li>
             </ol>
         </nav>
