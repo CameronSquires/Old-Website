@@ -55,6 +55,16 @@ body {
   display: block !important;
 }
 
+i {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .hide {
   display: none !important;
 }

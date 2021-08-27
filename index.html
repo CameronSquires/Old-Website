@@ -7,6 +7,7 @@
     <title>Cameron Squires' Website.</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fbbb4af42e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header"></div>
@@ -14,11 +15,11 @@
         <nav class="nav">
             <ol class="tabs">
                 <li class="tab"><a href="#">About</a></li>
-                <div class="extendable"onmouseover="extendnav()" onmouseout="retractnav()">
+                <div class="extendable"onclick="extendnav()">
                 <li class="tab">
                     <a href="#">
                         Projects
-                    
+                        <i class="fas fa-chevron-down" id="icon"></i>
                         <ol id="hiddentabs" class="hiddentabsclass">
                             <li><a href="#">Racecar</a></li>
                             <li><a href="#">Pong</a></li>
