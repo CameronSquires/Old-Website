@@ -1,5 +1,6 @@
 $backgroundcolour: #81ABFF;
 $navcolour: #053BA7;
+$slidetitlefont: 'Roboto', 'sans-serif';
 
 * {
     margin: 0 0;
@@ -14,7 +15,6 @@ body {
 }
 
 #navbar {
-    position:fixed;
     width:100%;
     background-color: $navcolour;
 }
@@ -54,10 +54,6 @@ body {
     display:block !important;
 }
 
-i {
-    transition: 0.3s ease-in-out;
-}
-
 .rotate {
     transform:rotate(180deg);
 }
@@ -74,7 +70,8 @@ i {
 .hiddentabsclass {
     
     display:none;
-    position: absolute;
+    
+    position:absolute;
     background-color: $navcolour;
     list-style-type: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -82,11 +79,75 @@ i {
     margin: 0 auto;
 }
 
+#main {
+    height:1200px;
+}
+
+
+.slidetitle {
+    padding: 18px;
+    text-align:center;
+    color:white;
+    font-size: 30px;
+    font-family: $slidetitlefont;
+}
+
+.lang {
+    padding:8px;
+    text-align:center;
+    color:white;
+    font-size: 24px;
+    font-family: $slidetitlefont;
+}
+
+.mainslider {
+    width:100%
+}
+
+.slidecontent {
+    width:100% !important;
+}
+
+.slide {
+    height:90vh !important;
+    justify-content: center;
+}
+
+
+.pong {
+    background-image: url('webone.jpg');
+    background-size:cover;
+}
+
+.racecar {
+    background-image: url('webtwo.jpg');
+    background-size:cover;
+}
+
+.passwordgen {
+    background-image: url('webthree.jpg');
+    background-size:cover;
+}
+
 #footer {
     background-color:$navcolour;
     width:100%;
     display:flex;
+    justify-content: space-between;
     align-items: flex-end;
-    position:absolute; /*Remove later*/
     bottom:0;
+    align-items:center;
+    text-decoration: none !important;
+    i {
+        text-decoration: none !important;
+        color:white;
+        font-size: 2em;
+        padding:8px;
+        transition: 0.25s ease-in-out;
+        &:hover {
+            color:$backgroundcolour;
+        }
+    }
 }
+
+

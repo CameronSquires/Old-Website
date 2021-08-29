@@ -11,7 +11,6 @@ body {
 }
 
 #navbar {
-  position: fixed;
   width: 100%;
   background-color: #053BA7;
 }
@@ -55,11 +54,6 @@ body {
   display: block !important;
 }
 
-i {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
 .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -84,17 +78,85 @@ i {
   margin: 0 auto;
 }
 
+#main {
+  height: 1200px;
+}
+
+.slidetitle {
+  padding: 18px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", "sans-serif";
+}
+
+.lang {
+  padding: 8px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Roboto", "sans-serif";
+}
+
+.mainslider {
+  width: 100%;
+}
+
+.slidecontent {
+  width: 100% !important;
+}
+
+.slide {
+  height: 90vh !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pong {
+  background-image: url("webone.jpg");
+  background-size: cover;
+}
+
+.racecar {
+  background-image: url("webtwo.jpg");
+  background-size: cover;
+}
+
+.passwordgen {
+  background-image: url("webthree.jpg");
+  background-size: cover;
+}
+
 #footer {
   background-color: #053BA7;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: absolute;
-  /*Remove later*/
   bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none !important;
+}
+
+#footer i {
+  text-decoration: none !important;
+  color: white;
+  font-size: 2em;
+  padding: 8px;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#footer i:hover {
+  color: #81ABFF;
 }
 /*# sourceMappingURL=styles.css.map */
