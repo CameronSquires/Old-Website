@@ -92,6 +92,11 @@ body {
     font-family: $slidetitlefont;
 }
 
+.githublink {
+    text-decoration: none;
+    text-align: center;
+}
+
 .lang {
     padding:8px;
     text-align:center;
@@ -102,6 +107,12 @@ body {
 
 .mainslider {
     width:100%
+}
+
+.aboutmetitle {
+    text-align: center;
+    font-family: $slidetitlefont;
+    padding:12px;
 }
 
 .slidecontent {
