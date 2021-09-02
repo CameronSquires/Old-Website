@@ -16,7 +16,7 @@ body {
 }
 
 .tabs {
-  overflow-x: hidden;
+  overflow-x: scroll;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
