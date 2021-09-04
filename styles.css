@@ -127,6 +127,9 @@ body {
   background-color: #3750da;
   width: 90%;
   margin: 0 auto;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
 }
 
 .slidecontent {
