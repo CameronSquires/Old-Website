@@ -26,8 +26,15 @@ body {
     width:100%;
     padding-left:0;
     flex-flow: row wrap;
-}
 
+}
+/*
+@media screen and (max-width: 480px) {
+    .tabs {
+        overflow-x: scroll;
+    }
+  }
+*/
 .tab {
     
     a {
