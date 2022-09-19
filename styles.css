@@ -88,18 +88,24 @@ body {
 
 .hide {
   display: none !important;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
 }
 
 #hiddentabs {
+  display: none;
   padding: 8px;
 }
 
 .hiddentabsclass {
-  display: none;
   overflow-x: inherit;
   position: absolute;
-  background-color: #053BA7;
+  background-color: #730be3;
   list-style-type: none;
+  padding: 5px 2px;
+  border-radius: 12px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -132,6 +138,7 @@ body {
 .sliderimg {
   margin: 0 auto;
   min-width: 30%;
+  max-width: 100%;
   max-height: 65%;
 }
 
@@ -194,6 +201,7 @@ body {
 .passwordgen {
   background-image: url("webthree.jpg");
   background-size: cover;
+  max-width: 100% !important;
 }
 
 #footer {

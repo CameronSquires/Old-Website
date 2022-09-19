@@ -1,5 +1,6 @@
 $backgroundcolour: #81ABFF;
 $navcolour: #053BA7;
+$hiddentabcolour: #730be3;
 $slidetitlefont: 'Roboto', 'sans-serif';
 
 * {
@@ -77,20 +78,24 @@ body {
 
 .hide {
     display:none !important;
+    transition: ease-in-out;
+    transition-delay: 3s;
 }
 
 #hiddentabs {
-    
+    display:none;
     padding:8px;
 }
 
 .hiddentabsclass {
     
-    display:none;
     overflow-x: inherit;
     position:absolute;
-    background-color: $navcolour;
+    background-color: $hiddentabcolour;
+
     list-style-type: none;
+    padding: 5px 2px;
+    border-radius: 12px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin: 0 auto;
@@ -123,6 +128,7 @@ body {
 .sliderimg {
     margin: 0 auto;
     min-width:30%;
+    max-width: 100%;
     max-height:65%;
 }
 
@@ -184,6 +190,7 @@ body {
 .passwordgen {
     background-image: url('webthree.jpg');
     background-size:cover;
+    max-width: 100%!important;
 }
 
 #footer {

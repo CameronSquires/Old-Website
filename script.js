@@ -1,9 +1,18 @@
-function extendnav() {
-    document.getElementById("hiddentabs").classList.toggle("toggle");
-    document.getElementById("icon").classList.toggle("rotate");
+function togglenav() {
+    if (document.getElementById("hiddentabs").style.display === "none") {
+        document.getElementById("hiddentabs").style.display = "block";
+        document.getElementById("icon").classList.toggle("rotate");
+    }
+    else {
+        
+        document.getElementById("hiddentabs").style.display = "none";
+    }
 }
 
-function retractnav() {
-    document.getElementById("hiddentabs").classList.toggle("toggle");
-}
+//function altnavretract() {
+//    if (document.getElementById("hiddentabs").style.display === "block") {
+  //      document.getElementById("hiddentabs").style.display = "none";
+    //}
+//}
+
 
